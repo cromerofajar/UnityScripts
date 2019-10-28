@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour {
     {
         //Texto del contador con tu puntuacion.
         countText.text = "Count: " + count.ToString ();
-        //En caso de llegar a la puntuacion maxima te sale la victoria.
+        //En caso de llegar a la puntuacion maxima cambia el texto a victoria.
         if (count >= 1000)
         {
             winText.text = "Has ganado"; 
