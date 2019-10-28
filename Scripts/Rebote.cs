@@ -47,7 +47,7 @@ public class Rebote : MonoBehaviour
                 direction.z=randomz;
                 //velocidad del cuerpo es = velocidad del cuerpo + direccion aleatoria * fuerza
                 //ForceMode.Impulse realiza la repulsion de la esfera hacia la dirrecion aleatoria en caso de ser opuesta a la
-                // que esta realizaria el efecto contrario magnetismo.
+                // que esta realizaria el efecto contrario, magnetismo.
                 rigidBody.AddForce(this.direction * this.force, ForceMode.Impulse);
                 //Comprueba que no sobrepase la velocidad maxima del cuerpo.
                 rigidBody.velocity = Vector3.ClampMagnitude(rigidBody.velocity, maxVelocity);
